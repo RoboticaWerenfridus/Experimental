@@ -1,5 +1,6 @@
 from gpiozero import Robot
 from bluedot import BlueDot
+import tkinter as tk
 
 robot = Robot(left=(18, 17), right=(23, 22))
 
@@ -20,3 +21,5 @@ def stop():
 
 bd.when_pressed = move
 bd.when_released = stop
+command = tk.Tk()
+command.mainloop()
